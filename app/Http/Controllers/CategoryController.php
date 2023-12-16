@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
+    public function home()
+    {
+        $produits = Product::paginate(6);
+        return view('home', compact('produits'));
+    }
     /**
      * Display a listing of the resource.
      */
