@@ -5,7 +5,7 @@
     @include('products.index')
 @endsection
 
-    <footer>
-        @include('layouts.footer')
-    </footer>
+<footer>
+    @include('layouts.footer')
+</footer>
 

@@ -24,4 +24,6 @@ Route::prefix('admin')->group(function () {
         ->names('categories');
     Route::resource('products', ProductController::class)->names('products');
 });
+Route::get('dash/products', [ProductController::class, 'dashboard'])->name('admin-produit');
+Route::get('dash/categories', [CategoryController::class, 'dashboard'])->name('admin-category');
 

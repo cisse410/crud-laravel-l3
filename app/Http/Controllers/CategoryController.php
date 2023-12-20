@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
+    public function dashboard()
+    {
+        $categories = Category::paginate(5);
+        return view('categories.dashboard', compact('categories'));
+    }
     public function home()
     {
         $produits = Product::paginate(6);

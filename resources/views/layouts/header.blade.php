@@ -24,8 +24,8 @@
                                 Administration
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Produits</a></li>
-                              <li><a class="dropdown-item" href="#">Catégory</a></li>
+                              <li><a class="dropdown-item" href="{{ route('admin-produit') }}">Produits</a></li>
+                              <li><a class="dropdown-item" href="{{ route('admin-category') }}">Catégories</a></li>
                             </ul>
                           </li>
                         <li class="nav-item"><a class="nav-link" href="#"> A propos </a></li>
